@@ -12,6 +12,7 @@ from airflow.hooks.postgres_hook import PostgresHook
 from airflow.contrib.hooks.aws_hook import AwsHook
 from airflow.models import Variable
 
+
 import sql
 
 dag_vars = Variable.get("S3-to-Redshift-Vars", deserialize_json=True)
